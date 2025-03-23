@@ -2,16 +2,16 @@
 
 ### Chapters
 
-*   [Chapter 1: Introduction](/chapters/chapter1_introduction)
-*   [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals)
-*   [Chapter 3: Architecture](/chapters/chapter3_architecture)
-*   [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol)
-*   [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives)
-*   [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives)
-*   [Chapter 7: Security](/chapters/chapter7_security)
-*   [Chapter 8: Implementation](/chapters/chapter8_implementation)
-*   [Chapter 9: Case Studies](/chapters/chapter9_case_studies)
-*   [Chapter 10: Future Directions](/chapters/chapter10_future_directions)
+- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
+- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
+- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
+- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
+- [Chapter 7: Security](/chapters/chapter7_security.md)
+- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
+- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
+- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
 
 [← Back to Table of Contents](/)
 
@@ -38,11 +38,11 @@ Sampling in MCP refers to the ability of servers to request completions from the
 
 The key characteristics of MCP sampling include:
 
-*   **Server-Initiated**: Sampling requests originate from servers based on their operational needs.
-*   **Client Control**: The client maintains control over whether and how sampling requests are fulfilled.
-*   **Structured Format**: Sampling follows a consistent message format similar to standard LLM APIs.
-*   **Security Boundaries**: Sampling respects security boundaries, with clients mediating access to the language model.
-*   **User Consent**: Sampling typically requires user consent, especially for sensitive operations.
+- **Server-Initiated**: Sampling requests originate from servers based on their operational needs.
+- **Client Control**: The client maintains control over whether and how sampling requests are fulfilled.
+- **Structured Format**: Sampling follows a consistent message format similar to standard LLM APIs.
+- **Security Boundaries**: Sampling respects security boundaries, with clients mediating access to the language model.
+- **User Consent**: Sampling typically requires user consent, especially for sensitive operations.
 
 Sampling serves several important purposes in the MCP ecosystem:
 
@@ -110,15 +110,10 @@ The client processes this request, potentially obtaining user consent, and respo
 Sampling introduces important security considerations that must be carefully managed:
 
 1.  **User Consent**: Users should explicitly approve sampling requests, understanding what information is being processed by the language model.
-    
 2.  **Data Privacy**: Sampling requests may contain sensitive information that should be protected according to appropriate privacy policies.
-    
 3.  **Rate Limiting**: Clients should implement rate limiting to prevent abuse of sampling capabilities.
-    
 4.  **Content Filtering**: Clients may need to filter or moderate sampling requests and responses to prevent misuse.
-    
 5.  **Transparency**: Users should be aware when servers are leveraging language model capabilities through sampling.
-    
 
 The MCP specification emphasizes these security considerations, recommending that applications implement appropriate controls and transparency mechanisms.
 
@@ -127,19 +122,12 @@ The MCP specification emphasizes these security considerations, recommending tha
 When implementing sampling support in MCP clients, several best practices can enhance security, usability, and effectiveness:
 
 1.  **Clear User Interfaces**: Provide clear interfaces for user consent, helping users understand what sampling requests are being made and why.
-    
 2.  **Appropriate Rate Limits**: Implement rate limits that balance server needs with resource constraints and security considerations.
-    
 3.  **Caching Strategies**: Consider caching strategies for common sampling requests to improve performance and reduce redundant processing.
-    
 4.  **Error Handling**: Implement robust error handling for sampling failures, providing informative error messages to servers.
-    
 5.  **Logging and Auditing**: Maintain appropriate logs of sampling requests for security monitoring and troubleshooting.
-    
 6.  **Performance Optimization**: Optimize sampling request handling to minimize latency and resource usage.
-    
 7.  **Content Policies**: Establish clear policies for acceptable sampling content and implement appropriate enforcement mechanisms.
-    
 
 By following these practices, developers can create sampling implementations that enhance server capabilities while maintaining security, performance, and user trust.
 
@@ -151,11 +139,11 @@ Roots in MCP define filesystem locations that servers can access, providing a st
 
 The key characteristics of MCP roots include:
 
-*   **Client Declaration**: Roots are declared by clients during capability negotiation.
-*   **URI-Based Identification**: Each root is identified by a URI scheme and path.
-*   **Access Control**: Roots define the boundaries of filesystem access for servers.
-*   **User Approval**: Root access typically requires explicit user approval.
-*   **Scheme Support**: Roots support various URI schemes, including `file://` for local filesystem access.
+- **Client Declaration**: Roots are declared by clients during capability negotiation.
+- **URI-Based Identification**: Each root is identified by a URI scheme and path.
+- **Access Control**: Roots define the boundaries of filesystem access for servers.
+- **User Approval**: Root access typically requires explicit user approval.
+- **Scheme Support**: Roots support various URI schemes, including `file://` for local filesystem access.
 
 Roots serve several important purposes in the MCP ecosystem:
 
@@ -202,15 +190,10 @@ This declaration informs servers about the filesystem locations they can access,
 Roots introduce important security considerations that must be carefully managed:
 
 1.  **Scope Limitation**: Roots should be defined with the minimum necessary scope, limiting server access to only required locations.
-    
 2.  **User Consent**: Users should explicitly approve root access, understanding which filesystem locations servers can access.
-    
 3.  **Path Traversal Prevention**: Implementations must prevent path traversal attacks that attempt to access files outside defined roots.
-    
 4.  **Permission Enforcement**: Access controls within root directories should be enforced according to user permissions.
-    
 5.  **Sensitive File Protection**: Special consideration should be given to protecting sensitive files even within approved root directories.
-    
 
 The MCP specification emphasizes these security considerations, recommending that applications implement appropriate controls and validation mechanisms.
 
@@ -219,19 +202,12 @@ The MCP specification emphasizes these security considerations, recommending tha
 When implementing roots support in MCP clients, several best practices can enhance security, usability, and effectiveness:
 
 1.  **Clear User Interfaces**: Provide clear interfaces for root approval, helping users understand what filesystem access is being granted and why.
-    
 2.  **Path Normalization**: Implement robust path normalization to prevent path traversal attacks and ensure consistent access control.
-    
 3.  **Granular Permissions**: Consider implementing granular permissions within roots, such as read-only vs. read-write access.
-    
 4.  **Dynamic Root Management**: Support dynamic addition and removal of roots based on user needs and workflow changes.
-    
 5.  **Root Visualization**: Provide visual indicators of active roots, helping users understand current filesystem access boundaries.
-    
 6.  **Validation Mechanisms**: Implement thorough validation of all filesystem operations against defined roots.
-    
 7.  **Audit Logging**: Maintain logs of filesystem access for security monitoring and troubleshooting.
-    
 
 By following these practices, developers can create roots implementations that enable powerful filesystem integration while maintaining security and user control.
 
@@ -243,8 +219,8 @@ The client-side primitives in MCP enable sophisticated interaction patterns betw
 
 Client and server primitives are designed to complement each other, creating a balanced ecosystem where each component contributes its strengths:
 
-*   **Servers provide context** through resources, tools, and prompts
-*   **Clients provide intelligence** through sampling and controlled access
+- **Servers provide context** through resources, tools, and prompts
+- **Clients provide intelligence** through sampling and controlled access
 
 This complementary relationship enables powerful workflows that leverage both data access and AI capabilities, creating experiences that neither component could provide alone.
 
@@ -328,20 +304,13 @@ This pattern combines the strengths of both components to deliver more sophistic
 When implementing client-server interactions in MCP, several considerations can improve effectiveness:
 
 1.  **Appropriate Pattern Selection**: Choose interaction patterns that match the specific requirements of your use case.
-    
 2.  **Performance Optimization**: Consider the performance implications of different patterns, especially for latency-sensitive operations.
-    
 3.  **Error Handling**: Implement robust error handling for all interaction patterns, ensuring graceful degradation when components fail.
-    
 4.  **Security Boundaries**: Maintain appropriate security boundaries in all interaction patterns, especially when handling sensitive data.
-    
 5.  **User Experience**: Design interactions with user experience in mind, minimizing latency and providing appropriate feedback.
-    
 6.  **Resource Efficiency**: Optimize resource usage in interaction patterns, avoiding unnecessary requests and processing.
-    
 7.  **Scalability**: Consider the scalability implications of different patterns, especially for high-volume or distributed deployments.
-    
 
 By carefully designing client-server interactions, developers can create MCP implementations that leverage the full power of both components while maintaining security, performance, and usability.
 
-[Previous Chapter](/chapters/chapter5_server_primitives)[Next Chapter](/chapters/chapter7_security)
+[Previous Chapter](/chapters/chapter5_server_primitives.md)[Next Chapter](/chapters/chapter7_security.md)

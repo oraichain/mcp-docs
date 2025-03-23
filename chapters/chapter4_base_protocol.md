@@ -2,16 +2,16 @@
 
 ### Chapters
 
-*   [Chapter 1: Introduction](/chapters/chapter1_introduction)
-*   [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals)
-*   [Chapter 3: Architecture](/chapters/chapter3_architecture)
-*   [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol)
-*   [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives)
-*   [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives)
-*   [Chapter 7: Security](/chapters/chapter7_security)
-*   [Chapter 8: Implementation](/chapters/chapter8_implementation)
-*   [Chapter 9: Case Studies](/chapters/chapter9_case_studies)
-*   [Chapter 10: Future Directions](/chapters/chapter10_future_directions)
+- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
+- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
+- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
+- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
+- [Chapter 7: Security](/chapters/chapter7_security.md)
+- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
+- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
+- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
 
 [← Back to Table of Contents](/)
 
@@ -24,13 +24,9 @@ The Model Context Protocol (MCP) is built on a solid foundation: the JSON-RPC 2.
 JSON-RPC is a lightweight remote procedure call (RPC) protocol that uses JSON (JavaScript Object Notation) for data encoding. It's designed to be simple, yet flexible enough to support complex interactions. For MCP, this foundation offers several advantages:
 
 1.  **Widespread Support**: JSON is supported in virtually every programming language, making MCP implementations accessible across different technology stacks.
-    
 2.  **Human-Readable Format**: The text-based nature of JSON makes debugging and development more straightforward compared to binary protocols.
-    
 3.  **Stateless Design**: The base protocol is stateless, with each message containing all the information needed to understand it, simplifying implementation.
-    
 4.  **Extensibility**: JSON's flexible structure allows for protocol extensions without breaking backward compatibility.
-    
 
 In MCP, all communication between clients and servers follows the JSON-RPC 2.0 specification. Each message is a JSON object with specific fields that identify its purpose and content. This standardized approach ensures that different implementations can reliably communicate with each other.
 
@@ -42,9 +38,9 @@ MCP defines three fundamental types of messages that form the backbone of all cl
 
 Requests are messages sent to initiate an operation. They always include:
 
-*   A unique identifier (`id`) that will be matched in the response
-*   A method name that specifies the operation to perform
-*   Optional parameters for the operation
+- A unique identifier (`id`) that will be matched in the response
+- A method name that specifies the operation to perform
+- Optional parameters for the operation
 
 For example, a request to list available resources might look like:
 
@@ -65,8 +61,8 @@ Requests are bidirectional—both clients and servers can send requests, dependi
 
 Responses are messages sent in reply to requests. They always include:
 
-*   The same identifier (`id`) as the corresponding request
-*   Either a result object or an error object
+- The same identifier (`id`) as the corresponding request
+- Either a result object or an error object
 
 Responses are further categorized as either successful results or errors:
 
@@ -116,9 +112,9 @@ Error codes follow the JSON-RPC 2.0 specification, with additional MCP-specific 
 
 Notifications are one-way messages that don't expect a reply. They include:
 
-*   A method name that specifies the notification type
-*   Optional parameters with additional information
-*   No identifier field
+- A method name that specifies the notification type
+- Optional parameters with additional information
+- No identifier field
 
 For example, a notification about a resource change might look like:
 
@@ -142,9 +138,9 @@ The Model Context Protocol consists of several key components that work together
 
 The foundation of MCP is the base protocol layer, which defines:
 
-*   Core JSON-RPC message types (requests, responses, notifications)
-*   Basic message structure and delivery semantics
-*   Error handling and reporting mechanisms
+- Core JSON-RPC message types (requests, responses, notifications)
+- Basic message structure and delivery semantics
+- Error handling and reporting mechanisms
 
 This layer provides the fundamental communication patterns that all MCP implementations must support.
 
@@ -152,10 +148,10 @@ This layer provides the fundamental communication patterns that all MCP implemen
 
 Built on top of the base protocol is the lifecycle management layer, which handles:
 
-*   Connection initialization and capability negotiation
-*   Session establishment and maintenance
-*   Graceful connection termination
-*   Protocol version compatibility
+- Connection initialization and capability negotiation
+- Session establishment and maintenance
+- Graceful connection termination
+- Protocol version compatibility
 
 This layer ensures that clients and servers can establish and maintain productive connections.
 
@@ -163,9 +159,9 @@ This layer ensures that clients and servers can establish and maintain productiv
 
 MCP defines several server-side features that provide the core functionality of the protocol:
 
-*   **Resources**: Data and content exposed by servers
-*   **Prompts**: Templates and instructions for language model interactions
-*   **Tools**: Executable functions that models can invoke
+- **Resources**: Data and content exposed by servers
+- **Prompts**: Templates and instructions for language model interactions
+- **Tools**: Executable functions that models can invoke
 
 These features represent the primary ways that servers provide context and capabilities to clients.
 
@@ -173,8 +169,8 @@ These features represent the primary ways that servers provide context and capab
 
 Complementing the server features are client-side capabilities:
 
-*   **Sampling**: Allowing servers to request language model completions
-*   **Roots**: Defining filesystem locations that servers can access
+- **Sampling**: Allowing servers to request language model completions
+- **Roots**: Defining filesystem locations that servers can access
 
 These features enable servers to leverage client capabilities while maintaining appropriate security boundaries.
 
@@ -182,10 +178,10 @@ These features enable servers to leverage client capabilities while maintaining 
 
 Cross-cutting concerns are addressed by utility components:
 
-*   Logging and diagnostics
-*   Argument completion and validation
-*   Progress reporting
-*   Operation cancellation
+- Logging and diagnostics
+- Argument completion and validation
+- Progress reporting
+- Operation cancellation
 
 These utilities enhance the usability and robustness of MCP implementations.
 
@@ -208,26 +204,18 @@ This approach allows implementations to adopt authentication mechanisms appropri
 While not standardized in the protocol, MCP implementations typically address authentication and authorization through several approaches:
 
 1.  **Transport-Level Security**: Using secure transport mechanisms like TLS to ensure that connections are encrypted and authenticated.
-    
 2.  **Host-Managed Authorization**: The host application controls which servers can be connected and what permissions they have, often with explicit user consent.
-    
 3.  **Custom Authentication Headers**: Implementations can extend the protocol with custom authentication headers or parameters.
-    
 4.  **Environment-Based Authentication**: For local servers, authentication may leverage the operating system's security model.
-    
 
 ### Best Practices
 
 Although MCP doesn't mandate specific authentication mechanisms, several best practices have emerged:
 
 1.  **Explicit User Consent**: Users should explicitly approve connections to MCP servers, understanding what data will be shared.
-    
 2.  **Principle of Least Privilege**: Servers should request and receive only the minimum permissions needed for their functionality.
-    
 3.  **Transparent Data Access**: Users should be able to see what data is being accessed by MCP servers.
-    
 4.  **Revocable Permissions**: Users should be able to revoke access permissions at any time.
-    
 
 These practices help ensure that MCP implementations maintain appropriate security boundaries while providing valuable functionality.
 
@@ -236,13 +224,9 @@ These practices help ensure that MCP implementations maintain appropriate securi
 The MCP community is actively discussing standardized approaches to authentication and authorization. Potential future additions to the protocol include:
 
 1.  **Standardized Authentication Flow**: A defined process for servers to authenticate with clients.
-    
 2.  **Permission Scopes**: Standardized permission categories that servers can request.
-    
 3.  **Token-Based Authorization**: A token system for managing and validating access permissions.
-    
 4.  **Federated Identity Support**: Integration with existing identity providers and authentication systems.
-    
 
 As MCP continues to evolve, these security considerations will likely become more formalized within the protocol specification.
 
@@ -260,9 +244,9 @@ MCP follows the JSON-RPC 2.0 error model, with standardized error codes and stru
 
 Error codes in MCP include:
 
-*   **Standard JSON-RPC errors** (e.g., -32700 for parse errors, -32601 for method not found)
-*   **MCP-specific errors** (e.g., capability negotiation failures, resource access errors)
-*   **Implementation-specific errors** (custom error codes for specific scenarios)
+- **Standard JSON-RPC errors** (e.g., -32700 for parse errors, -32601 for method not found)
+- **MCP-specific errors** (e.g., capability negotiation failures, resource access errors)
+- **Implementation-specific errors** (custom error codes for specific scenarios)
 
 When an error occurs, the responding party returns an error object instead of a result:
 
@@ -310,16 +294,11 @@ The `verbose` parameter allows components to distinguish between essential messa
 Several best practices have emerged for error handling and logging in MCP implementations:
 
 1.  **Graceful Degradation**: When a feature isn't supported or an error occurs, implementations should continue functioning with reduced capabilities rather than failing completely.
-    
 2.  **Informative Error Messages**: Error messages should provide clear, actionable information to help users and developers understand and resolve issues.
-    
 3.  **Appropriate Log Levels**: Implementations should use appropriate verbosity levels for different types of log messages, avoiding unnecessary noise.
-    
 4.  **Error Recovery**: Where possible, implementations should attempt to recover from errors automatically, falling back to alternative approaches when primary methods fail.
-    
 5.  **User Feedback**: Critical errors should be surfaced to users in a clear, understandable way, with suggestions for resolution when applicable.
-    
 
 By following these practices, MCP implementations can provide robust, reliable experiences even when unexpected conditions arise.
 
-[Previous Chapter](/chapters/chapter3_architecture)[Next Chapter](/chapters/chapter5_server_primitives)
+[Previous Chapter](/chapters/chapter3_architecture.md)[Next Chapter](/chapters/chapter5_server_primitives.md)

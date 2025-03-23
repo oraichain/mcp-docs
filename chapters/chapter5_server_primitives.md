@@ -2,16 +2,16 @@
 
 ### Chapters
 
-*   [Chapter 1: Introduction](/chapters/chapter1_introduction)
-*   [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals)
-*   [Chapter 3: Architecture](/chapters/chapter3_architecture)
-*   [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol)
-*   [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives)
-*   [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives)
-*   [Chapter 7: Security](/chapters/chapter7_security)
-*   [Chapter 8: Implementation](/chapters/chapter8_implementation)
-*   [Chapter 9: Case Studies](/chapters/chapter9_case_studies)
-*   [Chapter 10: Future Directions](/chapters/chapter10_future_directions)
+- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
+- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
+- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
+- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
+- [Chapter 7: Security](/chapters/chapter7_security.md)
+- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
+- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
+- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
 
 [← Back to Table of Contents](/)
 
@@ -73,10 +73,10 @@ Prompts in MCP are pre-defined templates or instructions that guide language mod
 
 The key characteristics of MCP prompts include:
 
-*   **User Control**: Prompts are designed to be explicitly selected by users, typically through UI elements like slash commands or menu options.
-*   **Parameterization**: Prompts can accept arguments that customize their behavior for specific use cases.
-*   **Structured Format**: Prompts follow a consistent format that includes metadata and message content.
-*   **Discoverability**: Clients can list available prompts, helping users discover relevant capabilities.
+- **User Control**: Prompts are designed to be explicitly selected by users, typically through UI elements like slash commands or menu options.
+- **Parameterization**: Prompts can accept arguments that customize their behavior for specific use cases.
+- **Structured Format**: Prompts follow a consistent format that includes metadata and message content.
+- **Discoverability**: Clients can list available prompts, helping users discover relevant capabilities.
 
 Prompts serve several important purposes in the MCP ecosystem:
 
@@ -190,21 +190,13 @@ This notification allows clients to refresh their prompt lists when new prompts 
 When implementing prompt support in MCP servers, several best practices can enhance the user experience and ensure effective integration:
 
 1.  **Clear Descriptions**: Provide concise, informative descriptions for each prompt, helping users understand its purpose and appropriate use cases.
-    
 2.  **Meaningful Argument Names**: Use descriptive names for prompt arguments, with clear descriptions of their purpose and expected format.
-    
 3.  **Reasonable Defaults**: Where appropriate, provide default values for optional arguments to simplify common use cases.
-    
 4.  **Consistent Naming**: Adopt a consistent naming convention for prompts, making them easier to discover and understand.
-    
 5.  **Appropriate Granularity**: Design prompts with appropriate scope—neither too narrow (requiring many similar prompts) nor too broad (requiring complex argument structures).
-    
 6.  **User-Friendly Presentation**: Consider how prompts will be presented in user interfaces, optimizing for discoverability and ease of use.
-    
 7.  **Versioning Strategy**: Plan for prompt evolution, considering how to handle updates without disrupting existing workflows.
-    
 8.  **Documentation**: Provide comprehensive documentation for complex prompts, including examples and usage guidelines.
-    
 
 By following these practices, developers can create prompt implementations that enhance the user experience and leverage the full power of language models in a structured, accessible way.
 
@@ -216,11 +208,11 @@ Resources in MCP represent structured data or content that provides additional c
 
 The key characteristics of MCP resources include:
 
-*   **Application Control**: Resources are managed by the client application, which decides how and when to use them based on application logic and user needs.
-*   **Unique Identification**: Each resource is uniquely identified by a URI (Uniform Resource Identifier).
-*   **Structured Content**: Resources have defined content types and structures, often represented using MIME types.
-*   **Discoverability**: Clients can list available resources and explore their organization.
-*   **Change Notification**: Servers can notify clients when resources change, enabling real-time updates.
+- **Application Control**: Resources are managed by the client application, which decides how and when to use them based on application logic and user needs.
+- **Unique Identification**: Each resource is uniquely identified by a URI (Uniform Resource Identifier).
+- **Structured Content**: Resources have defined content types and structures, often represented using MIME types.
+- **Discoverability**: Clients can list available resources and explore their organization.
+- **Change Notification**: Servers can notify clients when resources change, enabling real-time updates.
 
 Resources serve several important purposes in the MCP ecosystem:
 
@@ -358,21 +350,13 @@ Clients can then use these templates to construct specific resource URIs by repl
 When implementing resource support in MCP servers, several best practices can enhance the user experience and ensure effective integration:
 
 1.  **Efficient Resource Listing**: Implement pagination for resource listings to handle large resource collections efficiently.
-    
 2.  **Appropriate Granularity**: Design resource hierarchies with appropriate granularity, balancing specificity with manageability.
-    
 3.  **Meaningful URIs**: Use clear, consistent URI schemes that reflect the resource organization and make resources easily identifiable.
-    
 4.  **Content Type Accuracy**: Provide accurate MIME types for resources to enable appropriate handling and presentation.
-    
 5.  **Change Notifications**: Implement change notifications to keep clients updated about resource modifications.
-    
 6.  **Resource Caching**: Consider caching strategies to improve performance for frequently accessed resources.
-    
 7.  **Error Handling**: Provide clear error messages when resources cannot be accessed, helping users understand and resolve issues.
-    
 8.  **Security Boundaries**: Respect security boundaries and access controls when exposing resources.
-    
 
 By following these practices, developers can create resource implementations that provide rich context to language models while maintaining performance, security, and usability.
 
@@ -384,11 +368,11 @@ Tools in MCP represent executable functions that language models can invoke to p
 
 The key characteristics of MCP tools include:
 
-*   **Model Control**: Tools are designed to be discovered and invoked by language models based on their understanding of user needs and the current context.
-*   **Structured Inputs**: Tools have defined input schemas that specify the parameters they accept.
-*   **Structured Outputs**: Tools return results in a consistent format that models can interpret and incorporate into their responses.
-*   **Discoverability**: Models can discover available tools through tool listings and descriptions.
-*   **Security Controls**: Tool execution typically requires user consent, especially for operations with side effects.
+- **Model Control**: Tools are designed to be discovered and invoked by language models based on their understanding of user needs and the current context.
+- **Structured Inputs**: Tools have defined input schemas that specify the parameters they accept.
+- **Structured Outputs**: Tools return results in a consistent format that models can interpret and incorporate into their responses.
+- **Discoverability**: Models can discover available tools through tool listings and descriptions.
+- **Security Controls**: Tool execution typically requires user consent, especially for operations with side effects.
 
 Tools serve several important purposes in the MCP ecosystem:
 
@@ -504,45 +488,31 @@ This notification allows clients to refresh their tool lists when new tools beco
 Tools represent a powerful capability that requires careful security consideration. Since tools can execute code and modify systems, they introduce potential risks that must be managed:
 
 1.  **User Consent**: Users should explicitly approve tool invocations, especially for tools with side effects or access to sensitive data.
-    
 2.  **Clear Visibility**: Tool invocations should be clearly visible to users, with transparent indication of what actions are being performed.
-    
 3.  **Input Validation**: Tool implementations should validate inputs to prevent injection attacks or other security issues.
-    
 4.  **Least Privilege**: Tools should operate with the minimum permissions necessary for their functionality.
-    
 5.  **Rate Limiting**: Implementations should consider rate limiting to prevent abuse or resource exhaustion.
-    
 6.  **Audit Logging**: Tool invocations should be logged for security monitoring and troubleshooting.
-    
 
 The MCP specification emphasizes these security considerations, recommending that applications:
 
-*   Provide UI that makes clear which tools are being exposed to the AI model
-*   Insert clear visual indicators when tools are invoked
-*   Present confirmation prompts to the user for operations, to ensure a human is in the loop
+- Provide UI that makes clear which tools are being exposed to the AI model
+- Insert clear visual indicators when tools are invoked
+- Present confirmation prompts to the user for operations, to ensure a human is in the loop
 
 ### 5.4.4 Implementation Best Practices
 
 When implementing tool support in MCP servers, several best practices can enhance security, usability, and effectiveness:
 
 1.  **Clear Descriptions**: Provide concise, informative descriptions for each tool, helping models understand when and how to use them.
-    
 2.  **Precise Input Schemas**: Define input schemas that clearly specify required parameters and their formats, enabling accurate tool invocation.
-    
 3.  **Informative Outputs**: Structure tool outputs to be easily interpretable by models, with clear indications of success or failure.
-    
 4.  **Appropriate Granularity**: Design tools with appropriate scope—neither too narrow (requiring many similar tools) nor too broad (requiring complex argument structures).
-    
 5.  **Error Handling**: Implement robust error handling with informative error messages that help diagnose and resolve issues.
-    
 6.  **Performance Considerations**: Optimize tool execution for performance, especially for tools that may be frequently invoked.
-    
 7.  **Documentation**: Provide comprehensive documentation for complex tools, including examples and usage guidelines.
-    
 8.  **Testing**: Thoroughly test tools with various inputs, including edge cases and potential error conditions.
-    
 
 By following these practices, developers can create tool implementations that extend the capabilities of language models while maintaining security, usability, and reliability.
 
-[Previous Chapter](/chapters/chapter4_base_protocol)[Next Chapter](/chapters/chapter6_client_primitives)
+[Previous Chapter](/chapters/chapter4_base_protocol.md)[Next Chapter](/chapters/chapter6_client_primitives.md)

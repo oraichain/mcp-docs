@@ -2,16 +2,16 @@
 
 ### Chapters
 
-*   [Chapter 1: Introduction](/chapters/chapter1_introduction)
-*   [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals)
-*   [Chapter 3: Architecture](/chapters/chapter3_architecture)
-*   [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol)
-*   [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives)
-*   [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives)
-*   [Chapter 7: Security](/chapters/chapter7_security)
-*   [Chapter 8: Implementation](/chapters/chapter8_implementation)
-*   [Chapter 9: Case Studies](/chapters/chapter9_case_studies)
-*   [Chapter 10: Future Directions](/chapters/chapter10_future_directions)
+- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
+- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
+- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
+- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
+- [Chapter 7: Security](/chapters/chapter7_security.md)
+- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
+- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
+- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
 
 [← Back to Table of Contents](/)
 
@@ -32,15 +32,10 @@ As AI assistants gain mainstream adoption, the industry has invested heavily in 
 Before MCP, every new data source required its own custom implementation, creating several significant challenges:
 
 1.  **Integration Complexity**: Organizations needed to build and maintain separate connectors for each combination of AI model and data source, resulting in an M×N integration problem (where M is the number of models and N is the number of data sources).
-    
 2.  **Fragmented User Experience**: Users had to switch between different interfaces and systems to leverage AI capabilities across different data sources.
-    
 3.  **Security Inconsistencies**: Each custom integration implemented its own security measures, leading to inconsistent protection of sensitive data.
-    
 4.  **Limited Scalability**: Adding new data sources or AI models required significant development effort, making it difficult to scale AI capabilities across an organization.
-    
 5.  **Context Isolation**: AI models couldn't maintain context when moving between different data sources, limiting their effectiveness in complex workflows.
-    
 
 MCP addresses these challenges by providing a universal, open standard for connecting AI systems with data sources. By adopting MCP, both models and tools conform to a common interface, reducing the integration complexity from M×N to M+N. This standardization allows developers to build against a single protocol rather than maintaining separate connectors for each data source.
 
@@ -53,13 +48,9 @@ Just as LSP allows any IDE that supports it to seamlessly integrate with various
 The development of MCP was driven by several key insights:
 
 1.  **Context is Critical**: The effectiveness of AI systems depends heavily on their access to relevant context.
-    
 2.  **Standardization Enables Ecosystems**: Open standards create thriving ecosystems where innovations compound.
-    
 3.  **Security by Design**: Security and privacy considerations must be built into the protocol from the beginning.
-    
 4.  **Composability Matters**: The ability to combine multiple data sources and tools creates powerful workflows.
-    
 
 Since its release, MCP has seen significant growth on the server side, with over a thousand community-built, open-source servers as well as official integrations from companies. There's also been substantial open-source adoption, with contributors enhancing the core protocol and infrastructure.
 
@@ -70,35 +61,23 @@ The Model Context Protocol offers numerous benefits for developers, organization
 ### For Developers:
 
 1.  **Reduced Integration Effort**: Build once against a standard protocol rather than creating custom integrations for each data source.
-    
 2.  **Growing Ecosystem**: Access a growing list of pre-built integrations that your LLM can directly plug into.
-    
 3.  **Flexibility**: Switch between LLM providers and vendors without rewriting integrations.
-    
 4.  **Best Practices**: Leverage established security and privacy patterns built into the protocol.
-    
 
 ### For Organizations:
 
 1.  **Scalability**: Add new data sources and AI capabilities with minimal additional development.
-    
 2.  **Consistency**: Provide a unified experience across different data sources and tools.
-    
 3.  **Future-Proofing**: Adopt a standard that will continue to evolve with the AI landscape.
-    
 4.  **Security**: Implement consistent security controls across all AI integrations.
-    
 
 ### For End-Users:
 
 1.  **Seamless Experience**: Access AI capabilities across different tools and data sources without switching contexts.
-    
 2.  **Increased Productivity**: Leverage AI assistance with the full context of your work.
-    
 3.  **Greater Control**: Understand and manage what data is being shared with AI systems.
-    
 4.  **Enhanced Capabilities**: Benefit from AI systems that can access and act on relevant information.
-    
 
 ## 1.5 Who Should Use MCP?
 
@@ -126,4 +105,4 @@ As an open standard, MCP benefits from community contributions. If you're intere
 
 In the following chapters, we'll explore the architecture, components, and implementation details of MCP, providing you with the knowledge and tools to leverage this powerful protocol in your own projects and organizations.
 
-[Next Chapter](/chapters/chapter2_fundamentals)
+[Next Chapter](/chapters/chapter2_fundamentals.md)

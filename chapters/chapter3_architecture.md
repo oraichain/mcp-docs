@@ -2,16 +2,16 @@
 
 ### Chapters
 
-*   [Chapter 1: Introduction](/chapters/chapter1_introduction)
-*   [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals)
-*   [Chapter 3: Architecture](/chapters/chapter3_architecture)
-*   [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol)
-*   [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives)
-*   [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives)
-*   [Chapter 7: Security](/chapters/chapter7_security)
-*   [Chapter 8: Implementation](/chapters/chapter8_implementation)
-*   [Chapter 9: Case Studies](/chapters/chapter9_case_studies)
-*   [Chapter 10: Future Directions](/chapters/chapter10_future_directions)
+- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
+- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
+- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
+- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
+- [Chapter 7: Security](/chapters/chapter7_security.md)
+- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
+- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
+- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
 
 [← Back to Table of Contents](/)
 
@@ -23,9 +23,9 @@ The Model Context Protocol (MCP) is built on a carefully designed client-host-se
 
 At its core, the MCP architecture follows a hub-and-spoke model:
 
-*   The **host** application sits at the center, coordinating all interactions
-*   Multiple **clients** act as spokes, each connecting to a specific server
-*   **Servers** provide specialized capabilities through a standardized interface
+- The **host** application sits at the center, coordinating all interactions
+- Multiple **clients** act as spokes, each connecting to a specific server
+- **Servers** provide specialized capabilities through a standardized interface
 
 This design creates a clear separation of concerns while enabling rich, integrated experiences. Let's examine how these components interact in a typical MCP workflow:
 
@@ -38,10 +38,10 @@ This design creates a clear separation of concerns while enabling rich, integrat
 
 This architecture enables several key benefits:
 
-*   **Isolation**: Each server operates independently, with clear security boundaries
-*   **Composability**: Multiple servers can be combined to create rich experiences
-*   **Scalability**: New data sources can be added by implementing additional servers
-*   **Simplicity**: Each component has focused responsibilities, simplifying implementation
+- **Isolation**: Each server operates independently, with clear security boundaries
+- **Composability**: Multiple servers can be combined to create rich experiences
+- **Scalability**: New data sources can be added by implementing additional servers
+- **Simplicity**: Each component has focused responsibilities, simplifying implementation
 
 Consider a practical example: Claude Desktop (host) might connect to a file system server to access local documents, a GitHub server to access code repositories, and a database server to access structured data. Each server provides specialized capabilities within its domain, while Claude Desktop coordinates these connections and presents a unified interface to the user.
 
@@ -53,10 +53,10 @@ The Model Context Protocol is built on several key design principles that inform
 
 MCP is designed to minimize the implementation burden for server developers:
 
-*   Host applications handle complex orchestration responsibilities
-*   Servers focus on specific, well-defined capabilities
-*   Simple interfaces minimize implementation overhead
-*   Clear separation enables maintainable code
+- Host applications handle complex orchestration responsibilities
+- Servers focus on specific, well-defined capabilities
+- Simple interfaces minimize implementation overhead
+- Clear separation enables maintainable code
 
 This principle encourages a thriving ecosystem of specialized servers. By making server implementation straightforward, MCP enables developers to quickly expose their data sources and tools to AI systems without needing to understand the complexities of AI integration.
 
@@ -64,10 +64,10 @@ This principle encourages a thriving ecosystem of specialized servers. By making
 
 The power of MCP comes from combining multiple servers to create rich, integrated experiences:
 
-*   Each server provides focused functionality in isolation
-*   Multiple servers can be combined seamlessly
-*   Shared protocol enables interoperability
-*   Modular design supports extensibility
+- Each server provides focused functionality in isolation
+- Multiple servers can be combined seamlessly
+- Shared protocol enables interoperability
+- Modular design supports extensibility
 
 This composability allows users to build custom workflows that leverage multiple data sources and tools. For example, a developer might combine a file system server, a code analysis server, and a documentation server to create a comprehensive coding assistant.
 
@@ -75,11 +75,11 @@ This composability allows users to build custom workflows that leverage multiple
 
 MCP implements the principle of least privilege by limiting what servers can see:
 
-*   Servers receive only necessary contextual information
-*   Full conversation history stays with the host
-*   Each server connection maintains isolation
-*   Cross-server interactions are controlled by the host
-*   Host process enforces security boundaries
+- Servers receive only necessary contextual information
+- Full conversation history stays with the host
+- Each server connection maintains isolation
+- Cross-server interactions are controlled by the host
+- Host process enforces security boundaries
 
 This principle protects user privacy and security by ensuring that servers only have access to the information they need to perform their specific functions. It also prevents potential security issues from spreading between servers.
 
@@ -87,11 +87,11 @@ This principle protects user privacy and security by ensuring that servers only 
 
 MCP is designed to evolve over time while maintaining compatibility:
 
-*   Core protocol provides minimal required functionality
-*   Additional capabilities can be negotiated as needed
-*   Servers and clients evolve independently
-*   Protocol designed for future extensibility
-*   Backwards compatibility is maintained
+- Core protocol provides minimal required functionality
+- Additional capabilities can be negotiated as needed
+- Servers and clients evolve independently
+- Protocol designed for future extensibility
+- Backwards compatibility is maintained
 
 This progressive approach allows the MCP ecosystem to grow and adapt to new requirements without breaking existing implementations. It also enables developers to start with simple implementations and add more sophisticated features as needed.
 
@@ -103,11 +103,11 @@ Security is a fundamental consideration in the MCP architecture. The protocol im
 
 The host application serves as the security gatekeeper for MCP interactions:
 
-*   Controls which servers can be connected
-*   Manages user consent and authorization
-*   Enforces data access policies
-*   Monitors server behavior
-*   Can terminate connections if necessary
+- Controls which servers can be connected
+- Manages user consent and authorization
+- Enforces data access policies
+- Monitors server behavior
+- Can terminate connections if necessary
 
 This centralized security model ensures that users maintain control over their data and that servers cannot exceed their authorized access.
 
@@ -115,10 +115,10 @@ This centralized security model ensures that users maintain control over their d
 
 Each client maintains a 1:1 relationship with a specific server, creating clear isolation:
 
-*   Separate connection for each server
-*   Independent capability negotiation
-*   Isolated message routing
-*   Server-specific security boundaries
+- Separate connection for each server
+- Independent capability negotiation
+- Isolated message routing
+- Server-specific security boundaries
 
 This isolation prevents servers from directly interacting with each other, reducing the risk of unauthorized data access or security breaches.
 
@@ -126,10 +126,10 @@ This isolation prevents servers from directly interacting with each other, reduc
 
 MCP emphasizes user consent and control:
 
-*   Users must explicitly consent to server connections
-*   Data access requires appropriate authorization
-*   Tool invocations should be visible and controllable
-*   Sampling requests must be approved
+- Users must explicitly consent to server connections
+- Data access requires appropriate authorization
+- Tool invocations should be visible and controllable
+- Sampling requests must be approved
 
 These consent requirements ensure that users understand and control how their data is being used, building trust in the MCP ecosystem.
 
@@ -137,10 +137,10 @@ These consent requirements ensure that users understand and control how their da
 
 The protocol implements data minimization principles:
 
-*   Servers receive only the information they need
-*   Full conversation history remains with the host
-*   Servers declare their data requirements explicitly
-*   Hosts can filter sensitive information
+- Servers receive only the information they need
+- Full conversation history remains with the host
+- Servers declare their data requirements explicitly
+- Hosts can filter sensitive information
 
 By limiting the data shared with servers, MCP reduces the potential impact of security breaches and protects user privacy.
 
@@ -210,10 +210,10 @@ Capability negotiation is a cornerstone of the MCP architecture, enabling flexib
 
 During session initialization, both clients and servers declare their capabilities:
 
-*   Servers declare capabilities like resource subscriptions, tool support, and prompt templates
-*   Clients declare capabilities like sampling support and notification handling
-*   Capabilities can include optional features and parameters
-*   Both parties must respect declared capabilities throughout the session
+- Servers declare capabilities like resource subscriptions, tool support, and prompt templates
+- Clients declare capabilities like sampling support and notification handling
+- Capabilities can include optional features and parameters
+- Both parties must respect declared capabilities throughout the session
 
 This explicit declaration ensures that components only attempt to use features that are mutually supported, preventing compatibility issues.
 
@@ -221,10 +221,10 @@ This explicit declaration ensures that components only attempt to use features t
 
 Capability negotiation enables progressive enhancement of MCP implementations:
 
-*   Basic functionality works with minimal capabilities
-*   Advanced features are enabled when mutually supported
-*   New capabilities can be added in future protocol versions
-*   Older clients and servers can still interoperate with newer ones
+- Basic functionality works with minimal capabilities
+- Advanced features are enabled when mutually supported
+- New capabilities can be added in future protocol versions
+- Older clients and servers can still interoperate with newer ones
 
 This approach allows the MCP ecosystem to evolve while maintaining backward compatibility, encouraging innovation without breaking existing implementations.
 
@@ -232,11 +232,11 @@ This approach allows the MCP ecosystem to evolve while maintaining backward comp
 
 Here are some examples of capabilities that might be negotiated:
 
-*   **Resources**: Whether the server supports resource subscriptions and list change notifications
-*   **Tools**: Whether the server exposes executable tools and supports list change notifications
-*   **Prompts**: Whether the server provides prompt templates and supports list change notifications
-*   **Sampling**: Whether the client supports server-initiated language model sampling
-*   **Roots**: Whether the client provides information about filesystem roots
+- **Resources**: Whether the server supports resource subscriptions and list change notifications
+- **Tools**: Whether the server exposes executable tools and supports list change notifications
+- **Prompts**: Whether the server provides prompt templates and supports list change notifications
+- **Sampling**: Whether the client supports server-initiated language model sampling
+- **Roots**: Whether the client provides information about filesystem roots
 
 Each capability can include parameters that further define its behavior, allowing for fine-grained negotiation.
 
@@ -244,13 +244,13 @@ Each capability can include parameters that further define its behavior, allowin
 
 Capability negotiation has important security implications:
 
-*   Capabilities define the boundaries of permitted operations
-*   Servers cannot use capabilities that clients haven't declared
-*   Clients cannot use capabilities that servers haven't declared
-*   Attempting to use unsupported capabilities results in errors
+- Capabilities define the boundaries of permitted operations
+- Servers cannot use capabilities that clients haven't declared
+- Clients cannot use capabilities that servers haven't declared
+- Attempting to use unsupported capabilities results in errors
 
 This mechanism helps enforce the principle of least privilege, ensuring that components only perform operations that have been explicitly authorized.
 
 By implementing a robust capability negotiation system, MCP creates a flexible, extensible protocol that can adapt to diverse requirements while maintaining security and compatibility. This approach has proven successful in other protocols like the Language Server Protocol and contributes significantly to MCP's effectiveness as a universal connector for AI systems.
 
-[Previous Chapter](/chapters/chapter2_fundamentals)[Next Chapter](/chapters/chapter4_base_protocol)
+[Previous Chapter](/chapters/chapter2_fundamentals.md)[Next Chapter](/chapters/chapter4_base_protocol.md)

@@ -12,16 +12,16 @@ March 2025
 
 ## Table of Contents
 
-*   [Chapter 1: Introduction](/chapters/chapter1_introduction)
-*   [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals)
-*   [Chapter 3: Architecture](/chapters/chapter3_architecture)
-*   [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol)
-*   [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives)
-*   [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives)
-*   [Chapter 7: Security](/chapters/chapter7_security)
-*   [Chapter 8: Implementation](/chapters/chapter8_implementation)
-*   [Chapter 9: Case Studies](/chapters/chapter9_case_studies)
-*   [Chapter 10: Future Directions](/chapters/chapter10_future_directions)
+- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
+- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
+- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
+- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
+- [Chapter 7: Security](/chapters/chapter7_security.md)
+- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
+- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
+- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
 
 ## About This Guide
 
@@ -35,10 +35,10 @@ This guide is designed to be read sequentially, starting with basic concepts and
 
 This guide is suitable for both beginners and professionals:
 
-*   Developers looking to implement MCP in their applications
-*   Technical leaders evaluating MCP for their organizations
-*   AI researchers interested in context provision mechanisms
-*   Students learning about AI integration standards
-*   Anyone interested in understanding how AI systems connect to data sources
+- Developers looking to implement MCP in their applications
+- Technical leaders evaluating MCP for their organizations
+- AI researchers interested in context provision mechanisms
+- Students learning about AI integration standards
+- Anyone interested in understanding how AI systems connect to data sources
 
-[Start Reading](/chapters/chapter1_introduction)
+[Start Reading](/chapters/chapter1_introduction.md)
