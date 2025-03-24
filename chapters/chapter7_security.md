@@ -2,16 +2,16 @@
 
 ### Chapters
 
-- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
-- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
-- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
-- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
-- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
-- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
-- [Chapter 7: Security](/chapters/chapter7_security.md)
-- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
-- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
-- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
+- [Chapter 1: Introduction](./chapter1_introduction.md)
+- [Chapter 2: Fundamentals](./chapter2_fundamentals.md)
+- [Chapter 3: Architecture](./chapter3_architecture.md)
+- [Chapter 4: Base Protocol](./chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](./chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](./chapter6_client_primitives.md)
+- [Chapter 7: Security](./chapter7_security.md)
+- [Chapter 8: Implementation](./chapter8_implementation.md)
+- [Chapter 9: Case Studies](./chapter9_case_studies.md)
+- [Chapter 10: Future Directions](./chapter10_future_directions.md)
 
 [← Back to Table of Contents](/)
 
@@ -239,4 +239,4 @@ These practices help maintain security over time as implementations evolve and n
 
 By implementing comprehensive security measures across all aspects of MCP—from architecture to implementation to deployment—developers can create systems that provide powerful integration capabilities while protecting user data and system integrity.
 
-[Previous Chapter](/chapters/chapter6_client_primitives.md)[Next Chapter](/chapters/chapter8_implementation.md)
+[Previous Chapter](./chapter6_client_primitives.md)[Next Chapter](./chapter8_implementation.md)

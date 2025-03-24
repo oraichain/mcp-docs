@@ -2,16 +2,16 @@
 
 ### Chapters
 
-- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
-- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
-- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
-- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
-- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
-- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
-- [Chapter 7: Security](/chapters/chapter7_security.md)
-- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
-- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
-- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
+- [Chapter 1: Introduction](./chapter1_introduction.md)
+- [Chapter 2: Fundamentals](./chapter2_fundamentals.md)
+- [Chapter 3: Architecture](./chapter3_architecture.md)
+- [Chapter 4: Base Protocol](./chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](./chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](./chapter6_client_primitives.md)
+- [Chapter 7: Security](./chapter7_security.md)
+- [Chapter 8: Implementation](./chapter8_implementation.md)
+- [Chapter 9: Case Studies](./chapter9_case_studies.md)
+- [Chapter 10: Future Directions](./chapter10_future_directions.md)
 
 [← Back to Table of Contents](/)
 
@@ -253,4 +253,4 @@ This mechanism helps enforce the principle of least privilege, ensuring that com
 
 By implementing a robust capability negotiation system, MCP creates a flexible, extensible protocol that can adapt to diverse requirements while maintaining security and compatibility. This approach has proven successful in other protocols like the Language Server Protocol and contributes significantly to MCP's effectiveness as a universal connector for AI systems.
 
-[Previous Chapter](/chapters/chapter2_fundamentals.md)[Next Chapter](/chapters/chapter4_base_protocol.md)
+[Previous Chapter](./chapter2_fundamentals.md)[Next Chapter](./chapter4_base_protocol.md)

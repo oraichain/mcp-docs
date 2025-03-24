@@ -2,16 +2,16 @@
 
 ### Chapters
 
-- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
-- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
-- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
-- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
-- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
-- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
-- [Chapter 7: Security](/chapters/chapter7_security.md)
-- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
-- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
-- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
+- [Chapter 1: Introduction](./chapter1_introduction.md)
+- [Chapter 2: Fundamentals](./chapter2_fundamentals.md)
+- [Chapter 3: Architecture](./chapter3_architecture.md)
+- [Chapter 4: Base Protocol](./chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](./chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](./chapter6_client_primitives.md)
+- [Chapter 7: Security](./chapter7_security.md)
+- [Chapter 8: Implementation](./chapter8_implementation.md)
+- [Chapter 9: Case Studies](./chapter9_case_studies.md)
+- [Chapter 10: Future Directions](./chapter10_future_directions.md)
 
 [← Back to Table of Contents](/)
 
@@ -643,4 +643,4 @@ Continuous monitoring and profiling help identify performance issues and optimiz
 
 These practices help ensure that your MCP implementation maintains optimal performance over time, even as usage patterns and requirements evolve.
 
-[Previous Chapter](/chapters/chapter7_security.md)[Next Chapter](/chapters/chapter9_case_studies.md)
+[Previous Chapter](./chapter7_security.md)[Next Chapter](./chapter9_case_studies.md)

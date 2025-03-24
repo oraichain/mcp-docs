@@ -2,16 +2,16 @@
 
 ### Chapters
 
-- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
-- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
-- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
-- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
-- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
-- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
-- [Chapter 7: Security](/chapters/chapter7_security.md)
-- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
-- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
-- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
+- [Chapter 1: Introduction](./chapter1_introduction.md)
+- [Chapter 2: Fundamentals](./chapter2_fundamentals.md)
+- [Chapter 3: Architecture](./chapter3_architecture.md)
+- [Chapter 4: Base Protocol](./chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](./chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](./chapter6_client_primitives.md)
+- [Chapter 7: Security](./chapter7_security.md)
+- [Chapter 8: Implementation](./chapter8_implementation.md)
+- [Chapter 9: Case Studies](./chapter9_case_studies.md)
+- [Chapter 10: Future Directions](./chapter10_future_directions.md)
 
 [← Back to Table of Contents](/)
 
@@ -288,4 +288,4 @@ Several factors consistently contribute to successful MCP implementations:
 
 Organizations that emphasize these factors report higher adoption rates, greater user satisfaction, and better return on investment from their MCP implementations.
 
-[Previous Chapter](/chapters/chapter8_implementation.md)[Next Chapter](/chapters/chapter10_future_directions.md)
+[Previous Chapter](./chapter8_implementation.md)[Next Chapter](./chapter10_future_directions.md)

@@ -2,16 +2,16 @@
 
 ### Chapters
 
-- [Chapter 1: Introduction](/chapters/chapter1_introduction.md)
-- [Chapter 2: Fundamentals](/chapters/chapter2_fundamentals.md)
-- [Chapter 3: Architecture](/chapters/chapter3_architecture.md)
-- [Chapter 4: Base Protocol](/chapters/chapter4_base_protocol.md)
-- [Chapter 5: Server Primitives](/chapters/chapter5_server_primitives.md)
-- [Chapter 6: Client Primitives](/chapters/chapter6_client_primitives.md)
-- [Chapter 7: Security](/chapters/chapter7_security.md)
-- [Chapter 8: Implementation](/chapters/chapter8_implementation.md)
-- [Chapter 9: Case Studies](/chapters/chapter9_case_studies.md)
-- [Chapter 10: Future Directions](/chapters/chapter10_future_directions.md)
+- [Chapter 1: Introduction](./chapter1_introduction.md)
+- [Chapter 2: Fundamentals](./chapter2_fundamentals.md)
+- [Chapter 3: Architecture](./chapter3_architecture.md)
+- [Chapter 4: Base Protocol](./chapter4_base_protocol.md)
+- [Chapter 5: Server Primitives](./chapter5_server_primitives.md)
+- [Chapter 6: Client Primitives](./chapter6_client_primitives.md)
+- [Chapter 7: Security](./chapter7_security.md)
+- [Chapter 8: Implementation](./chapter8_implementation.md)
+- [Chapter 9: Case Studies](./chapter9_case_studies.md)
+- [Chapter 10: Future Directions](./chapter10_future_directions.md)
 
 [← Back to Table of Contents](/)
 
@@ -255,4 +255,4 @@ This human-centered approach ensures that as AI capabilities advance, they remai
 
 As we look to this future, the Model Context Protocol stands as a foundational technology—a universal connector that enables AI systems to access the context they need while maintaining appropriate security boundaries and user control. By providing a standardized way for AI systems to connect with the digital world, MCP helps unlock the full potential of AI as a tool for human empowerment and progress.
 
-[Previous Chapter](/chapters/chapter9_case_studies.md)
+[Previous Chapter](./chapter9_case_studies.md)
