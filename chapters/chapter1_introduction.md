@@ -13,7 +13,7 @@
 - [Chapter 9: Case Studies](./chapter9_case_studies.md)
 - [Chapter 10: Future Directions](./chapter10_future_directions.md)
 
-[← Back to Table of Contents](/)
+[← Back to Table of Contents](../)
 
 # Chapter 1: Introduction to the Model Context Protocol
 
